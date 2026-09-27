@@ -1,0 +1,107 @@
+.decomposition-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.top-grid,
+.dashboard-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.top-grid {
+  grid-template-columns: 2fr 1fr;
+}
+
+.dashboard-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+
+.widget-column,
+.search-content {
+  display: grid;
+  gap: 12px;
+}
+
+.news-section,
+.promo-widget,
+.widget-card {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.news-categories,
+.search-categories,
+.currency-ticker,
+.news-item,
+.currency-item,
+.widget-list-item,
+.weather-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.news-list,
+.currency-ticker,
+.widget-list {
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-item + .news-item,
+.widget-list > li + li {
+  margin-top: 8px;
+}
+
+.currency-ticker {
+  justify-content: space-between;
+}
+
+.widget-list-leading,
+.widget-list-detail {
+  color: #555;
+}
+
+.promo-widget h2,
+.widget-card h2 {
+  margin: 0 0 8px;
+}
+
+.promo-widget p,
+.widget-card p,
+.search-hint {
+  margin: 0;
+}
+
+.search-section {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  min-height: 40px;
+  border: 1px solid #777;
+}
+
+.search-bar input {
+  flex: 1;
+  min-width: 0;
+}
+
+.ad-banner,
+.widget-placeholder {
+  min-height: 64px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ccc;
+}

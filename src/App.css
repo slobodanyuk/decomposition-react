@@ -1,0 +1,60 @@
+.app-shell {
+  min-height: 100svh;
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+}
+
+.sidebar {
+  padding: 24px 16px;
+  background: #f3f4f6;
+  border-right: 1px solid #e5e7eb;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-link {
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #374151;
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.sidebar-link-active {
+  background: #fff;
+  color: #111827;
+  font-weight: 600;
+}
+
+.page-content {
+  min-width: 0;
+}
+
+#center {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  gap: 24px;
+  padding: 24px;
+}
+
+#center > .card {
+  width: min(100%, 24rem);
+}
+
+.page-placeholder {
+  padding: 32px;
+}
+
+.page-placeholder h1 {
+  margin: 0;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
